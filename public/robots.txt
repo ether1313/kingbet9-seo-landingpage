@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kingbet9-official.com/sitemap.xml
