@@ -23,6 +23,20 @@
       .cta { display: inline-block; margin-top: 14px; margin-right: 8px; padding: 10px 14px; border-radius: 8px; color: #111; text-decoration: none; font-weight: 700; background: linear-gradient(90deg,#f59e0b,#facc15); }
       .score { display:inline-block; padding: 4px 10px; border-radius: 999px; background: #facc15; color: #111; font-weight: 700; margin-top: 8px; }
       .subtle { color: #facc15; font-size: 13px; }
+      .hero-image, .image-card { margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #000; }
+      .hero-image img, .image-card img { width: 100%; display: block; object-fit: cover; }
+      .grid-2 { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
+      .grid-3 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 12px; }
+      .pill-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+      .pill { border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; background: #000; padding: 8px 10px; text-align: center; min-height: 46px; display:flex; align-items:center; justify-content:center; }
+      .pill img { max-width: 100%; max-height: 28px; object-fit: contain; }
+      .core-card { border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: #000; padding: 10px; text-align: center; }
+      .core-card img { height: 112px; width: auto; object-fit: contain; max-width: 100%; }
+      @media (min-width: 768px) {
+        .grid-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
+        .grid-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .pill-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+      }
     </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this an official BSB007 website?","acceptedAnswer":{"@type":"Answer","text":"No. This is an independent review page and is not operated by BSB007."}},{"@type":"Question","name":"Does BSB007 offer free credits for new users?","acceptedAnswer":{"@type":"Answer","text":"Yes, from time to time. The offer format changes, so always confirm expiry, wagering, and game restrictions before you claim."}},{"@type":"Question","name":"What should I check before claiming a BSB007 bonus?","acceptedAnswer":{"@type":"Answer","text":"Check wagering multiplier, game contribution, max withdrawal from bonus winnings, excluded payment methods, and account verification requirements."}},{"@type":"Question","name":"How fast are BSB007 withdrawals usually processed?","acceptedAnswer":{"@type":"Answer","text":"BSB007 withdrawal speed depends on payment method and verification status. Smaller withdrawals can be faster, while first cashouts may take longer due to account checks."}},{"@type":"Question","name":"Can BSB007 bonus winnings be withdrawn directly?","acceptedAnswer":{"@type":"Answer","text":"Usually not immediately. BSB007 bonus winnings often require turnover completion and may have a max cashout cap, so review terms before playing."}},{"@type":"Question","name":"Which games count toward BSB007 bonus wagering?","acceptedAnswer":{"@type":"Answer","text":"On BSB007, slot games often contribute more than some live casino titles, but contribution rules can change by campaign."}},{"@type":"Question","name":"Is BSB007 suitable for mobile users?","acceptedAnswer":{"@type":"Answer","text":"BSB007 is generally mobile-friendly for browsing and gameplay, but users should still test loading speed and navigation on their own device."}},{"@type":"Question","name":"Are BSB007 promotions available every week?","acceptedAnswer":{"@type":"Answer","text":"BSB007 frequently runs rotating promotions, but exact offers and eligibility can vary by date, account status, and campaign rules."}},{"@type":"Question","name":"What is the safest way to test BSB007 as a new user?","acceptedAnswer":{"@type":"Answer","text":"Start with a small deposit on BSB007, read the bonus terms first, and complete one full withdrawal cycle before committing larger amounts."}}],"isPartOf":{"@type":"WebPage","@id":"https://kingbet9-official.com/bsb007-review"}}</script>
   </head>
@@ -30,6 +44,7 @@
     <main>
       <p class="subtle">Independent review page</p>
       <h1>BSB007 Review: Bonus, Free Credits and Terms</h1>
+      <div class="hero-image"><img src="/prerender-assets/review-intro/bsb007.png" alt="BSB007 introduction" loading="lazy" /></div>
       <p>BSB007 gets attention mainly for its large welcome offer and frequent promo banners. In practice, the key question is not the headline number, but whether the terms are realistic for regular players. This page breaks down where the offer is good, where it is restrictive, and what to verify before you deposit.</p>
       <a class="cta" href="https://king9aus.net/RFESTERSEO" rel="nofollow sponsored" target="_blank">Claim BSB007 Bonus</a>
       <a class="cta" href="https://king9aus.net/RFESTERSEO" rel="nofollow sponsored" target="_blank">BSB007 Free Credits</a>
@@ -51,10 +66,12 @@
 <li>Live dealer tables such as baccarat and roulette variants</li>
 <li>Promo-linked games where bonus contribution can differ</li></ul>
         <h3>Core Game Types</h3>
-        <ul><li>Slot</li>
-<li>Event</li>
-<li>Live Casino</li></ul>
+        <div class="grid-3"><div class="core-card"><img src="/prerender-assets/review-core-games/slot.png" alt="Slot" loading="lazy" /></div>
+<div class="core-card"><img src="/prerender-assets/review-core-games/event.png" alt="Event" loading="lazy" /></div>
+<div class="core-card"><img src="/prerender-assets/review-core-games/live-casino.png" alt="Live Casino" loading="lazy" /></div></div>
         <h3>Slot Game Providers</h3>
+        <div class="grid-2"><div class="image-card"><img src="/prerender-assets/review-slot-providers/bsb007-1.png" alt="BSB007 slot providers 1" loading="lazy" /></div>
+<div class="image-card"><img src="/prerender-assets/review-slot-providers/bsb007-2.png" alt="BSB007 slot providers 2" loading="lazy" /></div></div>
         <ul><li>Boongo</li>
 <li>Imperium Games</li>
 <li>VPower</li>
@@ -116,28 +133,28 @@
 
       <section>
         <h2>Payment Methods</h2>
-        <ul><li>Visa</li>
-<li>Mastercard</li>
-<li>Google Pay</li>
-<li>Apple Pay</li>
-<li>Amopay</li>
-<li>Speedpay</li>
-<li>OSKO</li>
-<li>PayID</li></ul>
+        <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/visa.png" alt="Visa" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/mastercard.png" alt="Mastercard" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/google-pay.png" alt="Google Pay" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/apple-pay.png" alt="Apple Pay" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/amopay.png" alt="Amopay" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/speedpay.png" alt="Speedpay" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/osko.png" alt="OSKO" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/payid.png" alt="PayID" loading="lazy" /></div></div>
         <h2>License and Certificate</h2>
-        <ul><li>PAGCOR</li>
-<li>Gaming Curacao</li>
-<li>SI Labs International</li>
-<li>iTech Labs</li>
-<li>iovation</li>
-<li>BMM Testlabs</li>
-<li>ThreatMetrix</li>
-<li>TST Verified</li></ul>
+        <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/pagcor.png" alt="PAGCOR" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/gaming-curacao.png" alt="Gaming Curacao" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/si-labs-international.png" alt="SI Labs International" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/itech-labs.png" alt="iTech Labs" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/iovation.png" alt="iovation" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/bmm-testlabs.png" alt="BMM Testlabs" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/threatmetrix.png" alt="ThreatMetrix" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/tst-verified.png" alt="TST Verified" loading="lazy" /></div></div>
         <h2>Responsible Gambling</h2>
-        <ul><li>Play Responsibly 18+</li>
-<li>eCOGRA</li>
-<li>Gambling Help Online</li>
-<li>Gambling Therapy</li></ul>
+        <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/play-responsibly-18plus.png" alt="Play Responsibly 18+" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/ecogra.png" alt="eCOGRA" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/gambling-help-online.png" alt="Gambling Help Online" loading="lazy" /></div>
+<div class="pill"><img src="/prerender-assets/review-logos/gambling-therapy.png" alt="Gambling Therapy" loading="lazy" /></div></div>
       </section>
 
       <section>
