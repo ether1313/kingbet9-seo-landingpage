@@ -32,6 +32,9 @@
       .pill img { max-width: 100%; max-height: 28px; object-fit: contain; }
       .core-card { border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: #000; padding: 10px; text-align: center; }
       .core-card img { height: 112px; width: auto; object-fit: contain; max-width: 100%; }
+      .logo-group { margin-top: 22px; }
+      .logo-group:first-child { margin-top: 0; }
+      .logo-group h2 { margin: 0 0 12px; }
       .provider-chip-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
       .provider-chip { border: 1px solid rgba(255,255,255,0.16); border-radius: 10px; background: rgba(255,255,255,0.03); padding: 8px 10px; color: #d1d5db; font-size: 14px; }
       .pros-cons-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; }
@@ -39,7 +42,7 @@
       @media (min-width: 768px) {
         .grid-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
         .grid-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
-        .pill-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .pill-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
         .provider-chip-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
         .pros-cons-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
       }
@@ -144,8 +147,9 @@
       </section>
 
       <section>
-        <h2>Payment Methods</h2>
-        <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/visa.png" alt="Visa" loading="lazy" /></div>
+        <div class="logo-group">
+          <h2>Payment Methods</h2>
+          <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/visa.png" alt="Visa" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/mastercard.png" alt="Mastercard" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/google-pay.png" alt="Google Pay" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/apple-pay.png" alt="Apple Pay" loading="lazy" /></div>
@@ -153,8 +157,10 @@
 <div class="pill"><img src="/prerender-assets/review-logos/speedpay.png" alt="Speedpay" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/osko.png" alt="OSKO" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/payid.png" alt="PayID" loading="lazy" /></div></div>
-        <h2>License and Certificate</h2>
-        <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/pagcor.png" alt="PAGCOR" loading="lazy" /></div>
+        </div>
+        <div class="logo-group">
+          <h2>License and Certificate</h2>
+          <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/pagcor.png" alt="PAGCOR" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/gaming-curacao.png" alt="Gaming Curacao" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/si-labs-international.png" alt="SI Labs International" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/itech-labs.png" alt="iTech Labs" loading="lazy" /></div>
@@ -162,11 +168,14 @@
 <div class="pill"><img src="/prerender-assets/review-logos/bmm-testlabs.png" alt="BMM Testlabs" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/threatmetrix.png" alt="ThreatMetrix" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/tst-verified.png" alt="TST Verified" loading="lazy" /></div></div>
-        <h2>Responsible Gambling</h2>
-        <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/play-responsibly-18plus.png" alt="Play Responsibly 18+" loading="lazy" /></div>
+        </div>
+        <div class="logo-group">
+          <h2>Responsible Gambling</h2>
+          <div class="pill-grid"><div class="pill"><img src="/prerender-assets/review-logos/play-responsibly-18plus.png" alt="Play Responsibly 18+" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/ecogra.png" alt="eCOGRA" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/gambling-help-online.png" alt="Gambling Help Online" loading="lazy" /></div>
 <div class="pill"><img src="/prerender-assets/review-logos/gambling-therapy.png" alt="Gambling Therapy" loading="lazy" /></div></div>
+        </div>
       </section>
 
       <section>

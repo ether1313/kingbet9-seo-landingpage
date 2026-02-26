@@ -191,6 +191,9 @@ function buildHtml(page, commonGameTypes, commonSlotProviders, commonLiveCasinoP
       .pill img { max-width: 100%; max-height: 28px; object-fit: contain; }
       .core-card { border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: #000; padding: 10px; text-align: center; }
       .core-card img { height: 112px; width: auto; object-fit: contain; max-width: 100%; }
+      .logo-group { margin-top: 22px; }
+      .logo-group:first-child { margin-top: 0; }
+      .logo-group h2 { margin: 0 0 12px; }
       .provider-chip-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
       .provider-chip { border: 1px solid rgba(255,255,255,0.16); border-radius: 10px; background: rgba(255,255,255,0.03); padding: 8px 10px; color: #d1d5db; font-size: 14px; }
       .pros-cons-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; }
@@ -198,7 +201,7 @@ function buildHtml(page, commonGameTypes, commonSlotProviders, commonLiveCasinoP
       @media (min-width: 768px) {
         .grid-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
         .grid-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
-        .pill-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .pill-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
         .provider-chip-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
         .pros-cons-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
       }
@@ -275,12 +278,18 @@ function buildHtml(page, commonGameTypes, commonSlotProviders, commonLiveCasinoP
       </section>
 
       <section>
-        <h2>Payment Methods</h2>
-        <div class="pill-grid">${buildLogoGrid(page.paymentMethods)}</div>
-        <h2>License and Certificate</h2>
-        <div class="pill-grid">${buildLogoGrid(page.licenseCertificates)}</div>
-        <h2>Responsible Gambling</h2>
-        <div class="pill-grid">${buildLogoGrid(page.responsibleGambling)}</div>
+        <div class="logo-group">
+          <h2>Payment Methods</h2>
+          <div class="pill-grid">${buildLogoGrid(page.paymentMethods)}</div>
+        </div>
+        <div class="logo-group">
+          <h2>License and Certificate</h2>
+          <div class="pill-grid">${buildLogoGrid(page.licenseCertificates)}</div>
+        </div>
+        <div class="logo-group">
+          <h2>Responsible Gambling</h2>
+          <div class="pill-grid">${buildLogoGrid(page.responsibleGambling)}</div>
+        </div>
       </section>
 
       <section>
