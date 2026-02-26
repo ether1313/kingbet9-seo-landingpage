@@ -145,6 +145,12 @@ function buildCoreGameCards(commonGameTypes) {
     .join("\n");
 }
 
+function buildProviderChipGrid(items) {
+  return items
+    .map((item) => `<div class="provider-chip">${escapeHtml(item)}</div>`)
+    .join("\n");
+}
+
 function buildHtml(page, commonGameTypes, commonSlotProviders, commonLiveCasinoProviders) {
   const routeUrl = `${SITE_URL}/${page.slug}`;
   const faqJsonLd = JSON.stringify(buildFaqJsonLd(page, routeUrl));
@@ -185,10 +191,16 @@ function buildHtml(page, commonGameTypes, commonSlotProviders, commonLiveCasinoP
       .pill img { max-width: 100%; max-height: 28px; object-fit: contain; }
       .core-card { border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: #000; padding: 10px; text-align: center; }
       .core-card img { height: 112px; width: auto; object-fit: contain; max-width: 100%; }
+      .provider-chip-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+      .provider-chip { border: 1px solid rgba(255,255,255,0.16); border-radius: 10px; background: rgba(255,255,255,0.03); padding: 8px 10px; color: #d1d5db; font-size: 14px; }
+      .pros-cons-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; }
+      .pros-cons-card { border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; background: rgba(255,255,255,0.03); padding: 14px; }
       @media (min-width: 768px) {
         .grid-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
         .grid-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
         .pill-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .provider-chip-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .pros-cons-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
       }
     </style>
     <script type="application/ld+json">${faqJsonLd}</script>
@@ -227,17 +239,23 @@ function buildHtml(page, commonGameTypes, commonSlotProviders, commonLiveCasinoP
               )}</div>`
             : ""
         }
-        <ul>${buildList(commonSlotProviders)}</ul>
+        <div class="provider-chip-grid">${buildProviderChipGrid(commonSlotProviders)}</div>
         <h3>Live Casino Providers</h3>
-        <ul>${buildList(commonLiveCasinoProviders)}</ul>
+        <div class="provider-chip-grid">${buildProviderChipGrid(commonLiveCasinoProviders)}</div>
       </section>
 
       <section>
         <h2>Pros and Cons</h2>
-        <h3>Pros</h3>
-        <ul>${buildList(page.pros)}</ul>
-        <h3>Cons</h3>
-        <ul>${buildList(page.cons)}</ul>
+        <div class="pros-cons-grid">
+          <div class="pros-cons-card">
+            <h3>Pros</h3>
+            <ul>${buildList(page.pros)}</ul>
+          </div>
+          <div class="pros-cons-card">
+            <h3>Cons</h3>
+            <ul>${buildList(page.cons)}</ul>
+          </div>
+        </div>
       </section>
 
       <section>

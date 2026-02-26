@@ -32,10 +32,16 @@
       .pill img { max-width: 100%; max-height: 28px; object-fit: contain; }
       .core-card { border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: #000; padding: 10px; text-align: center; }
       .core-card img { height: 112px; width: auto; object-fit: contain; max-width: 100%; }
+      .provider-chip-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+      .provider-chip { border: 1px solid rgba(255,255,255,0.16); border-radius: 10px; background: rgba(255,255,255,0.03); padding: 8px 10px; color: #d1d5db; font-size: 14px; }
+      .pros-cons-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; }
+      .pros-cons-card { border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; background: rgba(255,255,255,0.03); padding: 14px; }
       @media (min-width: 768px) {
         .grid-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
         .grid-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
         .pill-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .provider-chip-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        .pros-cons-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
       }
     </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this an official SpinKing website?","acceptedAnswer":{"@type":"Answer","text":"No. This is an independent review page and is not operated by SpinKing."}},{"@type":"Question","name":"Does SpinKing offer free credits for promotions?","acceptedAnswer":{"@type":"Answer","text":"Yes, SpinKing may run free-credit campaigns, though availability and limits can vary by period."}},{"@type":"Question","name":"What should I check before claiming a SpinKing bonus?","acceptedAnswer":{"@type":"Answer","text":"Review SpinKing wagering rules, campaign validity, eligible games, and any max-withdrawal conditions."}},{"@type":"Question","name":"How fast are SpinKing withdrawals in real use?","acceptedAnswer":{"@type":"Answer","text":"SpinKing withdrawal timing depends on payment method and account history, with first payouts often taking longer."}},{"@type":"Question","name":"Can I withdraw SpinKing bonus winnings without turnover?","acceptedAnswer":{"@type":"Answer","text":"Normally no. SpinKing bonus winnings generally require turnover completion and may include payout caps."}},{"@type":"Question","name":"Which games on SpinKing count for wagering contribution?","acceptedAnswer":{"@type":"Answer","text":"SpinKing promotions often favor slot contribution, while some live categories may contribute at lower rates."}},{"@type":"Question","name":"Is SpinKing good for mobile play?","acceptedAnswer":{"@type":"Answer","text":"SpinKing is generally mobile-friendly, and core browsing and gameplay are usually accessible on standard devices."}},{"@type":"Question","name":"How often does SpinKing update its promotions?","acceptedAnswer":{"@type":"Answer","text":"SpinKing typically refreshes promotions regularly, especially around event periods and weekly cycles."}},{"@type":"Question","name":"How should beginners test SpinKing safely?","acceptedAnswer":{"@type":"Answer","text":"Use a small initial deposit on SpinKing, verify terms before claiming offers, and complete one withdrawal test early."}}],"isPartOf":{"@type":"WebPage","@id":"https://kingbet9-official.com/spinking-review"}}</script>
@@ -72,43 +78,49 @@
         <h3>Slot Game Providers</h3>
         <div class="grid-2"><div class="image-card"><img src="/prerender-assets/review-slot-providers/spinking-1.png" alt="SpinKing slot providers 1" loading="lazy" /></div>
 <div class="image-card"><img src="/prerender-assets/review-slot-providers/spinking-2.png" alt="SpinKing slot providers 2" loading="lazy" /></div></div>
-        <ul><li>Boongo</li>
-<li>Imperium Games</li>
-<li>VPower</li>
-<li>3 Oaks Gaming</li>
-<li>VPlus</li>
-<li>JILI</li>
-<li>Rich Gaming</li>
-<li>Fa Chai</li>
-<li>CQ9 Gaming</li>
-<li>Pegasus</li>
-<li>Joker</li>
-<li>Nextspin</li>
-<li>Ace333</li>
-<li>UU Slot</li>
-<li>Microgaming</li>
-<li>BT Gaming</li>
-<li>XE88</li>
-<li>WF Gaming</li>
-<li>WOW Gaming</li>
-<li>Epic Win</li></ul>
+        <div class="provider-chip-grid"><div class="provider-chip">Boongo</div>
+<div class="provider-chip">Imperium Games</div>
+<div class="provider-chip">VPower</div>
+<div class="provider-chip">3 Oaks Gaming</div>
+<div class="provider-chip">VPlus</div>
+<div class="provider-chip">JILI</div>
+<div class="provider-chip">Rich Gaming</div>
+<div class="provider-chip">Fa Chai</div>
+<div class="provider-chip">CQ9 Gaming</div>
+<div class="provider-chip">Pegasus</div>
+<div class="provider-chip">Joker</div>
+<div class="provider-chip">Nextspin</div>
+<div class="provider-chip">Ace333</div>
+<div class="provider-chip">UU Slot</div>
+<div class="provider-chip">Microgaming</div>
+<div class="provider-chip">BT Gaming</div>
+<div class="provider-chip">XE88</div>
+<div class="provider-chip">WF Gaming</div>
+<div class="provider-chip">WOW Gaming</div>
+<div class="provider-chip">Epic Win</div></div>
         <h3>Live Casino Providers</h3>
-        <ul><li>CT855 Live Casino</li>
-<li>Dream Gaming</li>
-<li>Big Gaming</li>
-<li>Sexy Baccarat</li></ul>
+        <div class="provider-chip-grid"><div class="provider-chip">CT855 Live Casino</div>
+<div class="provider-chip">Dream Gaming</div>
+<div class="provider-chip">Big Gaming</div>
+<div class="provider-chip">Sexy Baccarat</div></div>
       </section>
 
       <section>
         <h2>Pros and Cons</h2>
-        <h3>Pros</h3>
-        <ul><li>Promotion schedule stays active</li>
+        <div class="pros-cons-grid">
+          <div class="pros-cons-card">
+            <h3>Pros</h3>
+            <ul><li>Promotion schedule stays active</li>
 <li>Usable platform layout on mobile and desktop</li>
 <li>Solid range of core game categories</li></ul>
-        <h3>Cons</h3>
-        <ul><li>Offer value can change by campaign period</li>
+          </div>
+          <div class="pros-cons-card">
+            <h3>Cons</h3>
+            <ul><li>Offer value can change by campaign period</li>
 <li>Free-credit campaigns often have tighter limits</li>
 <li>Some terms require close review before claiming</li></ul>
+          </div>
+        </div>
       </section>
 
       <section>
